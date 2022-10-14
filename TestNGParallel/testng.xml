@@ -1,0 +1,22 @@
+<suite name="parallel Suites" parallel="tests">
+<test name="Test in chrome" >
+<parameter name= "browser" value="Chrome"/>
+
+<classes>
+<class name="com.hrms.parallel.TC002"/>
+
+</classes>
+
+</test>
+<test name="Test in Firefox" >
+<parameter name= "browser" value="Firefox"/>
+
+<classes>
+
+<class name="com.hrms.parallel.TC001"/>
+
+</classes>
+
+</test>
+
+</suite>

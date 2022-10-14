@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [parallel Suites]">
+  <parameter name="browser" value="Firefox"/>
+  <test parallel="tests" name="Test in chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.hrms.parallel.TC002">
+        <methods>
+          <include name="setUP"/>
+          <include name="closeFF"/>
+          <include name="openChrome"/>
+        </methods>
+      </class> <!-- com.hrms.parallel.TC002 -->
+      <class name="com.hrms.parallel.TC001">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeFF"/>
+        </methods>
+      </class> <!-- com.hrms.parallel.TC001 -->
+    </classes>
+  </test> <!-- Test in chrome(failed) -->
+</suite> <!-- Failed suite [parallel Suites] -->
